@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+html {
+  font-family: monospace;
+  direction: ltr;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}
