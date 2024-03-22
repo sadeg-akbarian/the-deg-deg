@@ -13,9 +13,35 @@
     <title>The Deg Deg</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header><h1>ToDo App</h1></header>
+    <main>
+      <ul class="theRadioButtons" id="theRadioButtons">
+        <li>
+          <input type="radio" id="allButton" name="toDoButtons" checked />
+          <label for="allButton">Show all ToDos</label>
+        </li>
+        <li>
+          <input type="radio" id="doneButton" name="toDoButtons" />
+          <label for="doneButton">Show done ToDos</label>
+        </li>
+        <li>
+          <input type="radio" id="openButton" name="toDoButtons" />
+          <label for="openButton">Show open ToDos</label>
+        </li>
+      </ul>
+      <label for="wrightNewTodos" class="labelForTheTypeInInput"
+        >Type in new Todos</label
+      >
+      <input type="text" id="wrightNewTodos" placeholder="min. 5 characters" />
+      <button type="button" id="addNewToDo">Add new Todo</button><br />
+      <button type="button" class="removeButton" id="removeButton">
+        Remove done Todos
+      </button>
+      <h2>List of all Todos</h2>
+      <ul id="browserList">
+        <!-- <li><span>Lesen</span> <input type="checkbox" /></li> -->
+      </ul>
+    </main>
     <!-- <script src="https://unpkg.com/vue@latest"></script> -->
     <script src="script.js" type="module"></script>
   </body>
